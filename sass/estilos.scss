@@ -93,6 +93,18 @@ body {
     margin-right:2%;
     justify-content:center;   
 }
+.item1{
+    background-image:url(../img/jaz.jpg);
+    @include back;
+}
+.item2{
+    background-image: url(../img/ninosnavidad.jpg);
+    @include back;
+}
+.item3{
+    background-image: url(../img/embarazo2.jpg);
+    @include back;
+}
 .contenedor .item:hover{
     transform:scale(0.20);
     transition:all 0.2s;

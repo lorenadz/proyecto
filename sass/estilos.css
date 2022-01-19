@@ -106,6 +106,24 @@ body {
           justify-content: center;
 }
 
+.item1 {
+  background-image: url(../img/jaz.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item2 {
+  background-image: url(../img/ninosnavidad.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item3 {
+  background-image: url(../img/embarazo2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .contenedor .item:hover {
   -webkit-transform: scale(0.2);
           transform: scale(0.2);
