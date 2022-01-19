@@ -32,7 +32,7 @@ header{
     width: $size1;
     height: 600px;   
     display: flex;
-    background-image: url(/img/imagen1.jpg);
+    background-image: url(../img/imagen1.jpg);
     @include back;
 }
 .secciones{
@@ -114,15 +114,15 @@ body {
     justify-content: center;   
 }
 .item1{
-    background-image:url(/img/baby.jpg);
+    background-image:url(../img/baby.jpg);
     @include back;
 }
 .item2{
-    background-image: url(/img/_DSC70881.jpg);
+    background-image: url(../img/_DSC70881.jpg);
     @include back;
 }
 .item3{
-    background-image: url(/img/bebe.jpg);
+    background-image: url(../img/bebe.jpg);
     @include back;
 }
 a{
@@ -370,15 +370,15 @@ input, textarea{
         text-align: center;
     }
     .item1{
-        background-image:url(/img/imagen1.jpg);
+        background-image:url(../img/imagen1.jpg);
         @include back;
     }
     .item2{
-        background-image: url(/img/_DSC70881.jpg);
+        background-image: url(../img/_DSC70881.jpg);
         @include back;
     }
     .item3{
-        background-image: url(/img/_DSC7037.jpg);
+        background-image: url(../img/_DSC7037.jpg);
         @include back;
     }
     .formg-control{
@@ -411,15 +411,15 @@ input, textarea{
     text-align: center;
     }
 .item1{
-    background-image:url(/img/imagen1.jpg);
+    background-image:url(../img/imagen1.jpg);
     @include back;
     }
 .item2{
-    background-image: url(/img/_DSC70881.jpg);
+    background-image: url(../img/_DSC70881.jpg);
     @include back;
     }
 .item3{
-    background-image: url(/img/_DSC7037.jpg);
+    background-image: url(../img/_DSC7037.jpg);
     @include back;
     }
 .formg-control{
