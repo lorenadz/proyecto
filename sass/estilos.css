@@ -125,8 +125,8 @@ body {
 }
 
 .contenedor .item:hover {
-  -webkit-transform: scale(0.2);
-          transform: scale(0.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-transition-duration: 0.4s;
