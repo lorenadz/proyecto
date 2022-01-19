@@ -138,24 +138,6 @@ body {
           justify-content: center;
 }
 
-.item1 {
-  background-image: url(../img/baby.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.item2 {
-  background-image: url(../img/_DSC70881.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.item3 {
-  background-image: url(../img/bebe.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 a {
   color: inherit;
   text-decoration: none;
