@@ -476,21 +476,6 @@ input, textarea {
     padding: 20px;
     text-align: center;
   }
-  .item1 {
-    background-image: url(../img/imagen1.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .item2 {
-    background-image: url(../img/_DSC70881.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .item3 {
-    background-image: url(../img/_DSC7037.jpg);
-    background-size: cover;
-    background-position: center;
-  }
   .formg-control {
     height: 300px;
     width: 600px;
