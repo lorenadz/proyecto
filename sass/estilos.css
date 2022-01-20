@@ -425,13 +425,9 @@ input, textarea {
   width: auto;
 }
 
-.portada img {
-  margin-top: 50px;
-}
-
 @media only screen and (max-width: 800px) {
   header nav {
-    width: 80%;
+    width: 60%;
     height: 100%;
     margin: 0;
     position: fixed;
@@ -468,31 +464,6 @@ input, textarea {
     background-image: url(../img/embarazo2.jpg);
     background-size: cover;
     background-position: center;
-  }
-  .formg-control {
-    height: 300px;
-    width: 600px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .contenedor {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    margin-top: 40px;
-    gap: 5px;
-  }
-  .item {
-    height: 400px;
-    width: 400px;
-    border: 2px solid #ffffff;
-    background-color: cadetblue;
-    padding: 20px;
-    text-align: center;
   }
   .formg-control {
     height: 300px;

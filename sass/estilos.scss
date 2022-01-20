@@ -250,6 +250,8 @@ h2{
     max-width: 95vw;
     color: inherit;    
 }
+
+
 .form-control{
     height:300px;
     widows: 300px; 
@@ -335,20 +337,21 @@ input, textarea{
 .carousel-inner > .item > img {
     height: 800px;
     width:auto;
+    
 } 
-.portada img{
-    margin-top: 50px;
+
+
+
+
+
+
+@media only screen and (min-width) {
+
 }
-
-
-
-
-
-
 
 @media only screen and (max-width:800px) {
     header nav{
-        width: 80%;
+        width: 60%;
         height: 100%;
         margin:0;
         position: fixed;
@@ -384,34 +387,6 @@ input, textarea{
     .formg-control{
         height: 300px;
         width: 600px;
-    }
-
-    
-   
-    
-    
-    
-
+    }   
 }
-@media only screen and (min-width:768px){
-    .contenedor{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
-    margin-top: 40px;
-    gap:5px;
-    }
 
-.item{
-    height: 400px;
-    width:400px;
-    border:2px solid #ffffff ;
-    background-color: cadetblue;
-    padding:20px;  
-    text-align: center;
-    }
-.formg-control{
-    height: 300px;
-    width: 600px;
-    }
-}
