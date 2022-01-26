@@ -202,38 +202,6 @@ a:hover {
   margin-bottom: 10%;
 }
 
-.galeria {
-  display: -ms-grid;
-  display: grid;
-  height: auto;
-  -ms-grid-columns: (2fr)[1fr];
-      grid-template-columns: repeat(1fr 2fr);
-  -ms-grid-rows: 3fr;
-      grid-template-rows: 3fr;
-  margin-left: 0%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 5%;
-}
-
-.tema {
-  background-color: cadetblue;
-  border: 2px solid white;
-  height: 300px;
-  width: 400px;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 5%;
-}
-
-.tema1 {
-  background-image: url(/bebes/newBorn1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 .section {
   height: 500px;
   width: 90%;
@@ -347,14 +315,6 @@ h2 {
 .fotolibro img {
   height: 100px;
   width: 100px;
-}
-
-.modelo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .imagen {
@@ -531,8 +491,6 @@ input, textarea {
     width: 100%;
     height: auto;
     margin-left: 8%;
-    height: auto;
-    width: 500px;
   }
   .menu__nav a {
     color: white;
@@ -568,7 +526,14 @@ input, textarea {
     color: inherit;
   }
   .contenedor {
-    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    margin-top: 80px;
     margin-left: 2%;
     margin-right: 2%;
     -webkit-box-pack: center;
@@ -576,8 +541,8 @@ input, textarea {
             justify-content: center;
   }
   .item {
-    height: 180px;
-    width: 180px;
+    height: auto;
+    width: 50%;
     background-color: cadetblue;
     padding: 10px;
     -webkit-box-pack: center;
@@ -601,7 +566,7 @@ input, textarea {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   header {
     width: 100%;
     height: auto;
@@ -613,7 +578,7 @@ input, textarea {
     background-position: center;
   }
   body {
-    height: 50%;
+    height: 100%;
     width: 100%;
     background: -webkit-gradient(linear, left top, right bottom, from(#b9c0bb), color-stop(#b8c5bc), color-stop(#b6c9bd), color-stop(#b4cebe), color-stop(#b2d3c0), color-stop(#acd2bf), color-stop(#a6d2be), color-stop(#a0d1be), color-stop(#95caba), color-stop(#8ac3b7), color-stop(#80bbb3), to(#76b4b0be));
     background: linear-gradient(to right bottom, #b9c0bb, #b8c5bc, #b6c9bd, #b4cebe, #b2d3c0, #acd2bf, #a6d2be, #a0d1be, #95caba, #8ac3b7, #80bbb3, #76b4b0be);
@@ -622,6 +587,7 @@ input, textarea {
   }
   .gallery {
     width: 100%;
+    height: auto;
     margin: 0;
     list-style: none;
     padding: 0;
@@ -652,7 +618,7 @@ input, textarea {
   }
   header {
     width: 100%;
-    height: 300px;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -665,6 +631,10 @@ input, textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
     margin-left: 5%;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -693,10 +663,7 @@ input, textarea {
     -ms-flex-line-pack: center;
         align-content: center;
     height: auto;
-    margin-left: 13%;
-    height: auto;
-    width: 600px;
-    margin-right: 5%;
+    width: 100%;
   }
   .menu__nav a {
     color: white;
@@ -732,14 +699,13 @@ input, textarea {
     color: inherit;
   }
   .contenedor {
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: auto;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    margin-top: 80px;
+    width: 100%;
     margin-left: 2%;
     margin-right: 2%;
     -webkit-box-pack: center;
@@ -747,8 +713,13 @@ input, textarea {
             justify-content: center;
   }
   .item {
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-color: cadetblue;
     padding: 10px;
     -webkit-box-pack: center;
@@ -756,12 +727,9 @@ input, textarea {
             justify-content: center;
     margin-left: 10%;
   }
-  .carousel-item {
-    width: 100px;
-    height: 800px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  #demo.carousel-inner {
+    width: 100%;
+    height: auto;
   }
   h2 {
     text-align: center;

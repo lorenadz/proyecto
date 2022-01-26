@@ -17,8 +17,6 @@ $size4: 50px;
 $font1:'Playfair Display', serif;
 $font2: 'Merriweather', serif;
 
-
-
 *{
     margin: 0px;
     padding:0px;
@@ -39,7 +37,6 @@ header{
     width:$size1;
     height: 100px;
     background-image: none;
-
 }
 body {  
     height:$size2;
@@ -73,7 +70,6 @@ body {
     text-align:right; 
     margin-left: 50px;
 }
-
 .menu__nav li :hover {
     color:rgb(79, 82, 79);  
 }
@@ -160,28 +156,6 @@ a:hover{
     font-family:$font1;
     margin-bottom: 10%;
 }
-.galeria{
-    display: grid;
-    height: auto;    
-    grid-template-columns:repeat(1fr 2fr);
-    grid-template-rows:3fr;
-    margin-left: 0%;
-    justify-content:center;
-    margin-top: 5%;   
-}
-.tema{
-    background-color: cadetblue;
-    border: 2px solid $color1;
-    height: 300px;
-    width: 400px;
-    text-align: center;
-    @include back;
-    margin-bottom: 5%;
-} 
-.tema1{
-    background-image: url(/bebes/newBorn1.jpg);
-    @include back;
-}  
 .section{
     height: 500px;
     width: 90%;
@@ -228,7 +202,6 @@ h2{
 .parrafo1{
     @extend .parrafo;
     bottom: 5%;
-
 }
 .formulario{
     width: 600px;
@@ -240,7 +213,6 @@ h2{
     color:$color1;
     border-radius: 2%;
     padding: 15px;
-
 }
 .btn-whatsapp{
     display: flex; 
@@ -277,13 +249,6 @@ h2{
     height: 100px;
     width: 100px;
 }
-.modelo{
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-}
 .imagen{
     width: 100%;
     height:50%;
@@ -308,13 +273,11 @@ input, textarea{
     width: 100%;
     box-sizing: border-box;
     padding:7px;
-
 }
 #boton {
     background:#80bbb3;
     color:white;
 }
-
 #boton:hover{
     cursor:pointer;
     color:#455f5c
@@ -325,7 +288,6 @@ input, textarea{
     @include back;
     background-repeat: no-repeat;
 } 
-
 .carousel-inner{
     height: 600px;
     width:90%;
@@ -353,7 +315,6 @@ input, textarea{
         background-image: url(../img/imagen1.jpg);
         @include back;
     }
-
     body{  
         height:$size2;
         width: $size1;
@@ -414,8 +375,7 @@ input, textarea{
         width:80%;
         height: 100% ;
         margin:0;
-        position:absolute;
-        
+        position:absolute;    
     }
     .menu__nav li {
         display:block;
@@ -428,8 +388,6 @@ input, textarea{
         width: 100%;
         height: auto;
         margin-left: 8%;
-        height:auto;
-        width:500px;
     }
     .menu__nav a {
         color:$color1;
@@ -454,15 +412,19 @@ input, textarea{
         max-width: 95vw;
         color: inherit;    
     }
-    .contenedor{    
-        margin-top:20px;
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;   
+        width: 100%; 
+        margin-top:80px;
         margin-left:2%;
         margin-right:2%;
         justify-content:center;   
     }
     .item{
-        height: 180px;
-        width:180px;
+        height: auto;
+        width:50%;
         background-color: cadetblue;
         padding:10px;  
         justify-content: center;   
@@ -483,7 +445,7 @@ input, textarea{
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:800px) {
     header{
         width: $size1;
         height: auto;  
@@ -491,9 +453,8 @@ input, textarea{
         background-image: url(../img/imagen1.jpg);
         @include back;
     }
-
     body{  
-        height:$size2;
+        height:$size1;
         width: $size1;
         background: linear-gradient(to right bottom, #b9c0bb, #b8c5bc, #b6c9bd, #b4cebe, #b2d3c0, #acd2bf, #a6d2be, #a0d1be, #95caba, #8ac3b7, #80bbb3, #76b4b0be);
         background-repeat: no-repeat;
@@ -501,6 +462,7 @@ input, textarea{
     }
     .gallery{
         width: 100%;
+        height: auto;
         margin: 0;
         list-style:none;
         padding:0;
@@ -525,7 +487,7 @@ input, textarea{
     }
     header{
         width: $size1;
-        height: 300px;   
+        height: 100%;   
         display: flex;
         background-image: url(../img/imagen1.jpg);
         @include back;
@@ -533,6 +495,7 @@ input, textarea{
     .logo {
         width: 10%;
         display:flex;
+        flex-direction:unset;
         margin-left:5%;
         align-items:baseline;
         align-content:flex-start;
@@ -553,10 +516,7 @@ input, textarea{
         display: flex;
         align-content: center;
         height: auto;
-        margin-left:13%;
-        height:auto;
-        width:600px;
-        margin-right:5%;
+        width: 100%;
     }
     .menu__nav a {
         color:$color1;
@@ -582,29 +542,28 @@ input, textarea{
         color: inherit;    
     }
     .contenedor{
-        display: grid;
-        height: auto;    
-        grid-template-columns:repeat(3,1fr);
-        grid-template-rows:1fr;
-        margin-top:80px;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;   
+        width: 100%; 
         margin-left:2%;
         margin-right:2%;
         justify-content:center;   
     }
     .item{
-        height: 200px;
-        width:200px;
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
         background-color: cadetblue;
         padding:10px;  
         justify-content: center;   
         margin-left: 10%;
     }
-    .carousel-item{
-        width: 100px;
-        height: 800px;
-        @include back;
-        background-repeat: no-repeat;
-    } 
+    #demo.carousel-inner{
+        width:100%;
+        height: auto;
+    }
     h2{
         text-align: center;
         font-family: $font1;
