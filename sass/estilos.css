@@ -671,7 +671,7 @@ textarea {
             flex-direction: row;
     position: fixed;
     bottom: 300px;
-    right: 40px;
+    right: 20px;
     max-width: 95vw;
     color: inherit;
   }
