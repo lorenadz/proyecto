@@ -10,34 +10,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./sass/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="style.js"></script>
 </head>
 
 <body>
     <header class="header">
+
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+        <div class="contenedorLogo">
+            <img src="/img/milogotransprente copy.png" class= "logoPrueba">
+        </div>
         
-        <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-lg navbar-dark">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="./index.html">
-            <img src="/img/milogotransprente copy.png" class= "d-inline-block align-top">
+        <div class="topnav" id="myTopnav">
+
+            <a href="#">Home</a>
+            <a href="secciones/bebes&niños.html" class="active">Bebes&niños</a>
+            <a href="secciones/pre-mamá.html"class="active">Pre-mamá</a>
+            <a href="secciones/productos.html"class="active">Productos</a>
+            <a href="secciones/eventos.html"class="active">Eventos</a>
+            <a href="secciones/presupuesto.html"class="active">Presupuesto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
             </a>
-            <div class="collapse nav-bar-collapse show" id="navbarTogglerDemo01">
-            <div class="menu__nav">
-                <a class="nav-item nav-link active" href="#">Home</a>
-                <a class="nav-item nav-link" href="secciones/bebes&niños.html">Bebes&niños</a>
-                <a class="nav-item nav-link" href="secciones/pre-mamá.html">Pre-mamá</a>
-                <a class="nav-item nav-link" href="secciones/productos.html">Productos</a>
-                <a class="nav-item nav-link" href="secciones/eventos.html">Eventos</a>
-                <a class="nav-item nav-link" href="secciones/presupuesto.html">Presupuesto</a>
-            </div>
-        </nav>    
+        </div>    
+
         <div class="btn-whatsapp">
             <a href="https://api.whatsapp.com/send?phone=1160001398" target="_blank">
                 <img src="img/whatsapp.png" alt="">
-            </a> </div>
+            </a>
         </div>
     </header>
+
+
+
     <p class="textoCorto">
         <a href=”https://es.wikipedia.org/wiki/Henri_Cartier-Bresson/”>"Fotografiar es colocar la cabeza, el ojo y el
             corazón en un mismo eje"</a> <div class="contenedor">
@@ -52,30 +59,33 @@
                 <p>Hago retrato de bebés y niños, fotografía de familia, y cubro todo tipo de eventos.</p>
     </div>
     <main class="main col-xs-12 col-md-12">
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#" data-slide-to="0" class="active"></li>
-                    <li data-target="#" data-slide-to="1"></li>
-                    <li data-target="#" data-slide-to="2"></li>
-                </ul>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <ul class="carousel-indicators">
+                <li data-target="#" data-slide-to="0" class="active"></li>
+                <li data-target="#" data-slide-to="1"></li>
+                <li data-target="#" data-slide-to="2"></li>
+            </ul>
+
             <div class="carousel-inner">
-            <div class="carousel-item active">
-                    <img src="img/familia.jpg" alt="bebe1">
-</div>
-                        <div class="carousel-item">
-                            <img src="img/baby.jpg" alt="bebe2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/embarazada.jpg" alt="embarazo">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
+                <div class="carousel-item active">
+                    <img class="imagenCarrousel" src="img/familia.jpg" alt="bebe1">
                 </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrousel" src="img/baby.jpg" alt="bebe2">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenCarrousel" src="img/embarazada.jpg" alt="embarazo">
+                </div>
+            </div>
+
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+        </div>
                 <h2> Video</h2>
                 <section class=" servicios container-fluid">
                     <div class="parrafo">
