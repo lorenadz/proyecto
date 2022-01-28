@@ -359,7 +359,7 @@ textarea {
     float: right;
     display: block;
     }
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position:relative;}
     .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -643,3 +643,178 @@ textarea {
         margin-bottom: 5%;
     }
 } 
+@media only screen and (max-width:320px) {
+    header {
+        width: $size1;
+        height: auto;
+        display: flex;
+        background-image: url(../img/imagen1.jpg);
+        @include back;
+    }
+    .topnav a:not(:first-child) {display:none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+    .topnav.responsive {position:relative;}
+    .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .topnav.responsive a {
+    float: none;
+    display:block;
+    text-align:left;
+    }
+    .topnav a {
+        color: $color1;
+        text-decoration: none;
+        border-style: none;
+        font-family: $font1;
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        font-size:small;
+    }
+    .topnav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: initial;
+        background-color: rgba(255, 255, 255, 0);
+        overflow: hidden;
+    }
+    body {
+        height: auto;
+        width: $size1;
+        background: linear-gradient(to right bottom, #b9c0bb, #b8c5bc, #b6c9bd, #b4cebe, #b2d3c0, #acd2bf, #a6d2be, #a0d1be, #95caba, #8ac3b7, #80bbb3, #76b4b0be);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1 {
+        text-align: center;
+        font-family: $font1;
+        font-size:larger;
+        color: $color2;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .parrafo {
+        text-align: center;
+        font-family: $font2;
+        font-size:medium;
+        color: $color2;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+    }
+    .gallery {
+        width: 90%;
+        margin:auto;
+        list-style: none;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery img{
+        height:100%;
+        width:100%;
+    }
+    .contenedor {
+        display: grid;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        margin-top: 10%;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .item {
+        margin-top: 5%;
+        text-align: center;
+        justify-content: center;
+    }
+    .textoCorto {
+        margin-top: 5%;
+        margin-left:auto;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        color: black;
+        float: center;
+        font-size:medium;
+        margin-bottom: 5%;
+    }
+
+    .portada img {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 80%;
+        height: auto;
+        background-color: #80bbb3;
+        border-style: double;
+        border-color: #acd2bf;
+        margin-left: 10%;
+        color: $color1;
+        border-radius: 2%;
+        padding: 15px;
+    }
+
+    header {
+        width: $size1;
+        height: 300px;
+        display: flex;
+        background-image: url(../img/imagen1.jpg);
+        @include back;
+    }
+
+    .gallery img {
+        display: flex;
+        align-content: center;
+    }
+    .btn-whatsapp {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 10%;
+        right: 10%;
+        max-width: 95vw;
+        color: inherit;
+    }
+    .carousel-item {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .carousel-inner {
+        width: 90%;
+        align-content: center;
+        border: $color1;
+        border-style: double;
+        margin: auto;
+        -ms-flex-line-pack: center;
+    }
+    .carousel-inner>.item>img {
+        height: 800px;
+        width: auto;
+    }
+    .imagenCarrousel{
+        width:100%;
+    }
+    h2 {
+        text-align: center;
+        font-family: $font1;
+        font-size: 30;
+        color: $color2;
+        margin-left: 5%;
+    }
+
+}

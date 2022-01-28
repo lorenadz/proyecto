@@ -727,4 +727,213 @@ textarea {
     margin-bottom: 5%;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  header {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(../img/imagen1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav a {
+    color: white;
+    text-decoration: none;
+    border-style: none;
+    font-family: "Playfair Display", serif;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: small;
+  }
+  .topnav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+  }
+  body {
+    height: auto;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right bottom, from(#b9c0bb), color-stop(#b8c5bc), color-stop(#b6c9bd), color-stop(#b4cebe), color-stop(#b2d3c0), color-stop(#acd2bf), color-stop(#a6d2be), color-stop(#a0d1be), color-stop(#95caba), color-stop(#8ac3b7), color-stop(#80bbb3), to(#76b4b0be));
+    background: linear-gradient(to right bottom, #b9c0bb, #b8c5bc, #b6c9bd, #b4cebe, #b2d3c0, #acd2bf, #a6d2be, #a0d1be, #95caba, #8ac3b7, #80bbb3, #76b4b0be);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: larger;
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .parrafo {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: medium;
+    color: black;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+  }
+  .gallery {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .gallery img {
+    height: 100%;
+    width: 100%;
+  }
+  .contenedor {
+    display: -ms-grid;
+    display: grid;
+    height: auto;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    margin-top: 10%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .item {
+    margin-top: 5%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .textoCorto {
+    margin-top: 5%;
+    margin-left: auto;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    float: center;
+    font-size: medium;
+    margin-bottom: 5%;
+  }
+  .portada img {
+    width: 100%;
+  }
+  .formulario {
+    width: 80%;
+    height: auto;
+    background-color: #80bbb3;
+    border-style: double;
+    border-color: #acd2bf;
+    margin-left: 10%;
+    color: white;
+    border-radius: 2%;
+    padding: 15px;
+  }
+  header {
+    width: 100%;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(../img/imagen1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .btn-whatsapp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    max-width: 95vw;
+    color: inherit;
+  }
+  .carousel-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .carousel-inner {
+    width: 90%;
+    align-content: center;
+    border: white;
+    border-style: double;
+    margin: auto;
+    -ms-flex-line-pack: center;
+  }
+  .carousel-inner > .item > img {
+    height: 800px;
+    width: auto;
+  }
+  .imagenCarrousel {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 30;
+    color: black;
+    margin-left: 5%;
+  }
+}
 /*# sourceMappingURL=estilos.css.map */
