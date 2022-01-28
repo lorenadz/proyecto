@@ -234,7 +234,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-.parrafo, .parrafo1 {
+.parrafo {
   text-align: center;
   font-family: "Merriweather", serif;
   font-size: 20;
@@ -243,10 +243,6 @@ h2 {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 20px;
-}
-
-.parrafo1 {
-  bottom: 5%;
 }
 
 .formulario {
@@ -413,6 +409,17 @@ textarea {
     display: block;
     text-align: left;
   }
+  .topnav a {
+    color: white;
+    text-decoration: none;
+    border-style: none;
+    font-family: "Playfair Display", serif;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: small;
+  }
   body {
     height: auto;
     width: 100%;
@@ -420,6 +427,24 @@ textarea {
     background: linear-gradient(to right bottom, #b9c0bb, #b8c5bc, #b6c9bd, #b4cebe, #b2d3c0, #acd2bf, #a6d2be, #a0d1be, #95caba, #8ac3b7, #80bbb3, #76b4b0be);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: larger;
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .parrafo {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: medium;
+    color: black;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
   }
   .gallery {
     width: 90%;
@@ -447,11 +472,10 @@ textarea {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     margin-top: 80px;
-    margin-left: 15%;
-    margin-right: 10%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: 5%;
   }
   .item {
     margin-top: 5%;
@@ -462,12 +486,12 @@ textarea {
   }
   .textoCorto {
     margin-top: 5%;
-    margin-left: 4%;
+    margin-left: auto;
     text-align: center;
     font-family: 'Dancing Script', cursive;
     color: black;
     float: center;
-    font-size: large;
+    font-size: medium;
     margin-bottom: 5%;
   }
   .portada img {
@@ -547,7 +571,6 @@ textarea {
 @media only screen and (max-width: 800px) {
   header {
     width: 100%;
-    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -563,8 +586,70 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .contenedorLogo {
+    height: 5rem;
+  }
+  .topnav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav a {
+    color: white;
+    text-decoration: none;
+    border-style: none;
+    font-family: "Playfair Display", serif;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: medium;
+  }
   .portada img {
     width: 100%;
+  }
+  .gallery {
+    width: 100%;
+    margin-left: auto;
+    list-style: none;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .formulario {
     width: 80%;
@@ -577,52 +662,12 @@ textarea {
     border-radius: 2%;
     padding: 15px;
   }
-  header {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-image: url(../img/imagen1.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .menu__nav {
-    width: 80%;
-    height: 100%;
-    margin: 0;
-    position: absolute;
-  }
-  .menu__nav li {
-    display: block;
-    text-align: left;
-    margin-left: 0;
-  }
   .gallery img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-line-pack: center;
         align-content: center;
-  }
-  .menu__nav a {
-    color: white;
-    font-size: 22px;
-    text-decoration: none;
-    border-style: none;
-    font-family: "Playfair Display", serif;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-right: 10px;
-    margin-top: 10px;
-    padding: 5px;
-    display: block;
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
   }
   .btn-whatsapp {
     display: -webkit-box;
@@ -633,8 +678,8 @@ textarea {
         -ms-flex-direction: row;
             flex-direction: row;
     position: fixed;
-    bottom: 300px;
-    right: 20px;
+    bottom: 20%;
+    right: 5%;
     max-width: 95vw;
     color: inherit;
   }
